@@ -1,0 +1,85 @@
+.managerContainer{
+  margin-left: 6%;
+  width: 60%;
+  height: auto;
+  min-height: 2120px;
+  overflow:hidden;
+  margin-top: 60px;
+  border-right: 1px solid #bcbcbc;
+}
+
+.postList{
+  width: 90%;
+  border-top: 3px solid #E3E3E3;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.postList table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.postList th{
+  padding-top: 12px;
+  font-weight: 300;
+  height: 36px;
+  background-color: #F1F1F1;
+}
+
+.postList tr{
+  height: 52px;
+  font-weight: 300;
+  font-size: 0.9em;
+  border-bottom: #E7E7E7 1px solid;
+}
+
+.postList tr td .img{
+  width: 30px;
+}
+
+.postList tr td .title{
+  margin-left: 3%;
+  text-decoration: none;
+  color: #434343;
+}
+
+.postList tr td .title:hover{
+  margin-left: 3%;
+  text-decoration: none;
+  color: #0CDD00;;
+}
+
+.postList table .number{
+  width: 10%;
+}
+
+.postList table .title{
+  width: 70%;
+}
+
+.postList table .hit{
+  width: 10%;
+}
+
+.postList table .checkbox{
+  width: 10%;
+}
+
+.goWritePage{
+  padding: 6px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #515151;
+  margin-top: 16px;
+  float: right;
+  margin-right: 10%;
+  background-color: #C9FDC6;
+  border: 1px solid #0AC200;
+}
+
+.goWritePage:hover{
+  text-decoration: none;
+  color: #0CDD00;
+  margin-top: 16px;
+}

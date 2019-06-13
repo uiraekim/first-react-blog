@@ -1,0 +1,54 @@
+.container{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.searchDiv{
+  width: 100%;
+  height: 60px;
+}
+
+.searchIcon{
+  float: right;
+  width:40px;
+  margin-top: 10px;
+}
+
+.searchInput{
+  float: right;
+  padding : 8px;
+  font-size: 1.1em;
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.logoMenu{
+  height: 60px;
+  padding-top: 20px;
+}
+
+.logo{
+  font-style: oblique;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #545454;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.logo:hover{
+  color: black;
+}
+
+.menu{
+  float: right;
+  text-decoration: none;
+  margin-right: 4%;
+  margin-top: 6px;
+  color : #585858;
+}
+
+.menu:hover{
+  color: #76FB3E;
+}

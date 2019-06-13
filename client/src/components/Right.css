@@ -1,0 +1,146 @@
+.rightContainer{
+  float: right;
+  width: 24%;
+  margin-right: 6%;
+  height: 1000px;
+  margin-top: 50px;
+}
+
+.category{
+  height: 600px;
+  border-bottom: 1px #bcbcbc solid;
+  margin-bottom: 30px;
+}
+
+.category .title{
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.category ul{
+  margin-top: 30px;
+  list-style: none;
+  margin-left: -16px;
+}
+
+.category ul li{
+  margin-top: 16px;
+}
+
+.category ul li .categoryName{
+  color: #0CDD00;
+  text-decoration: none;
+}
+
+.category ul li .categoryName:hover{
+  color: #424242;
+  text-decoration: none;
+}
+
+.category .count{
+  margin-left: 6px;
+  color: #424242;
+}
+
+.search{
+  height: 160px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.search .title{
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.search .rightSearchIcon{
+  float: left;
+  width:60px;
+  margin-top: 10px;
+}
+
+.search .rightSearchInput{
+  float: left;
+  padding : 12px;
+  font-size: 1.2em;
+  margin-top: 16px;
+}
+
+.recentPost{
+  height: 600px;
+  border-bottom: 1px #bcbcbc solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.recentPost .title{
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.recentPost ul{
+  margin-top: 30px;
+  list-style: none;
+  margin-left: -24px;
+}
+
+.recentPost ul li{
+  margin-top: 16px;
+}
+
+.recentPost ul li .postTitle{
+  color: #8A0829;
+  text-decoration: none;
+}
+
+.recentPost ul li .postTitle:hover{
+  color: #0CDD00;
+  text-decoration: none;
+}
+
+.recentPost ul li .date{
+  color: #0CDD00;
+  font-size: 0.8em;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.recentComment{
+  height: 600px;
+  border-bottom: 1px #bcbcbc solid;
+  margin-bottom: 30px;
+}
+
+.recentComment .title{
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.recentComment ul{
+  margin-top: 30px;
+  list-style: none;
+  margin-left: -24px;
+}
+
+.recentComment ul li{
+  margin-top: 16px;
+}
+
+.recentComment ul li .commentTitle{
+  color: #0CDD00;
+  text-decoration: none;
+}
+
+.recentComment ul li .commentTitle:hover{
+  color: #424242;
+  text-decoration: none;
+}
+
+.goManagerPage{
+  float: right;
+  text-decoration: none;
+}
+
+.goManagerPage:hover{
+  text-decoration: none;
+  color: #0CDD00;
+}

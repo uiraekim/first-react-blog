@@ -1,0 +1,9 @@
+.categoryContainer{
+  padding-left: 6%;
+  width: 60%;
+  height: auto;
+  min-height: 2120px;
+  overflow:hidden;
+  margin-top: 60px;
+  border-right: 1px solid #bcbcbc;
+}

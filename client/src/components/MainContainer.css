@@ -1,0 +1,78 @@
+.mainContainer{
+  padding-left: 6%;
+  width: 60%;
+  height: auto;
+  min-height: 2120px;
+  overflow:hidden;
+  margin-top: 60px;
+  border-right: 1px solid #bcbcbc;
+}
+
+body{
+  min-width: 600px;
+}
+
+.post {
+  margin-right: 5%;
+  margin-bottom: 0px;
+  width: 28%;
+  height: 720px;
+  float: left;
+  word-wrap: break-word;
+}
+
+@media ( max-width: 1200px ) {
+  .post {
+    width: 45%;
+  }
+}
+
+@media ( max-width: 800px ) {
+  .post {
+    width: 82%;
+  }
+}
+
+.post .img{
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
+  transition:width 0.7s, margin-left 0.7s, transform 0.7s;
+}
+
+.post .img:hover{
+  width: 120%;
+  margin-left: -10%;
+  overflow: hidden;
+}
+
+.post .title{
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.6em;
+  text-decoration: none;
+}
+
+.post .title:hover{
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #0CE200;
+  line-height: 1.6em;
+  text-decoration: none;
+}
+
+.post .date{
+  font-size: 0.8em;
+  color: #0CE200;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.post .content{
+  font-size: 1.2em;
+  color: #424242;
+  font-weight: 300;
+  line-height: 2.4em;
+}

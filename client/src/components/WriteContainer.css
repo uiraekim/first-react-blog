@@ -1,0 +1,72 @@
+.writeContainer{
+  margin-left: 6%;
+  width: 60%;
+  height: auto;
+  min-height: 2120px;
+  overflow:hidden;
+  margin-top: 60px;
+  border-right: 1px solid #bcbcbc;
+}
+
+.writeContainer .writePost{
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.writeContainer .file{
+    width: 20%;
+    height: 24px;
+    padding: 6px;
+    border: 2px #bcbcbc solid;
+    margin-bottom: 16px;
+    background-color: #F3FCF0;
+}
+
+.writeContainer .category{
+  width: 20%;
+  height: 36px;
+  padding: 6px;
+  border: 2px #bcbcbc solid;
+  margin-bottom: 16px;
+}
+
+.writeContainer .title{
+  width: 89%;
+  height: 30px;
+  padding: 6px;
+  font-size: 1.2em;
+  border: 2px #bcbcbc solid;
+  margin-bottom: 16px;
+  background-color: #F3FCF0;
+}
+
+.writeContainer .content{
+  width: 88%;
+  height: 400px;
+  border: 3px #bcbcbc solid;
+  padding:12px;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height:1.6em;
+  background-color: #F3FCF0;
+}
+
+.writeContainer .save{
+  padding: 6px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #515151;
+  margin-top: 16px;
+  float: right;
+  margin-right: 9%;
+  background-color: #C9FDC6;
+  border: 1px solid #0AC200;
+}
+
+.writeContainer .save:hover{
+  text-decoration: none;
+  color: #0CDD00;
+  margin-top: 16px;
+}
