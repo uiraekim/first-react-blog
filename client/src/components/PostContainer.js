@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import { Route, Link } from "react-router-dom";
 import './PostContainer.css';
+
+import CommentContainer from './CommentContainer';
+
 import programming from '../img/programming.jpg';
 import english from '../img/english.png';
 import life from '../img/life.PNG';
 import song from '../img/song.png';
 import ufc from '../img/ufc.jpg';
+
+import {stateToHTML} from 'draft-js-export-html';
+import { convertFromRaw } from 'draft-js';
+import { post } from 'axios';
+
 class PostContainer extends Component {
 
   state = {
@@ -16,6 +24,11 @@ class PostContainer extends Component {
     this.callApi()
       .then(res => this.setState({post: res}))
       .catch(err => console.log(err));
+
+    this.setCookie()
+      .then((response) => {
+        console.log(response.data);
+      })
   }
 
   componentDidUpdate(prevProps) {
@@ -24,17 +37,30 @@ class PostContainer extends Component {
     this.callApi()
       .then(res => this.setState({post: res}))
       .catch(err => console.log(err));
+
+    this.setCookie()
+      .then((response) => {
+        console.log(response.data);
+      })
     }
   }
 
+//해당 포스트의 id값인 bno값을 api서버로 넘겨줘서 데이터를 받아온다.
   callApi = async () => {
     const response = await fetch('/api/post/?bno='+ this.props.bno);
     const body = await response.json();
     return body;
   }
 
-    render() {
+  setCookie = () => {
+    const url = '/api/setCookie';
+    const bnoData = {
+      'bno' : this.props.bno,
+    }
+    return post(url, bnoData);
+  }
 
+    render() {
       let imgSrc; //이미지 경로를 선언하고 카테고리에 따라서 변수에 맞는 경로를 대입해준다.
       if(this.state.post){
         if(this.state.post[0].img){
@@ -66,10 +92,10 @@ class PostContainer extends Component {
                 </div>
                 <hr/>
                 <img className="img" src={imgSrc} alt="사진" />
-                <div className="content">{this.state.post[0].content}</div>
+                <div className="content" dangerouslySetInnerHTML={ {__html: stateToHTML(convertFromRaw(JSON.parse(this.state.post[0].content)))} }></div>
               </div>
               : ""}
-              <div className="box"></div>
+              <CommentContainer bno={this.props.bno}/>
             </div>
         );
     }

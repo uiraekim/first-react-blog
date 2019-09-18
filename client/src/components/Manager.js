@@ -3,7 +3,6 @@ import { Route, Link } from "react-router-dom";
 import Header from './Header';
 import Right from './Right';
 import ManagerContainer from './ManagerContainer';
-import './Manager.css';
 
 class Manager extends Component {
     render() {
@@ -11,7 +10,7 @@ class Manager extends Component {
             <div className="">
               <Header />
               <Right/>
-              <ManagerContainer/>
+              <ManagerContainer page={this.props.match.params.page}/>
             </div>
         );
     }

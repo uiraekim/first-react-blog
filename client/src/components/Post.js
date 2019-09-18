@@ -4,7 +4,6 @@ import Header from './Header';
 import PostContainer from './PostContainer';
 import jQuery from "jquery";
 import Right from './Right';
-import './Post.css';
 
 
 

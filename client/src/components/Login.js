@@ -20,17 +20,16 @@ class Login extends Component {
 
     handleSubmit(event) {
     event.preventDefault();
-      if(this.state.value == "123"){
-        this.props.history.push("/manager");
+      if(this.state.value == "12341234"){ //비밀번호가 맞아야지
+        this.props.history.push("/manager/1"); //메니저 페이지로 감
       }else{
         alert("비밀번호가 틀렸습니다.");
       }
     }
 
     componentDidMount() {
-    jQuery('body, html').animate({scrollTop: 0}, 800);
+      jQuery('body, html').animate({scrollTop: 0}, 500); //스크롤을 맨상단으로 500ms만에 올림
     }
-
 
     render() {
         return (

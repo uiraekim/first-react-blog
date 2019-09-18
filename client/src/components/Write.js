@@ -3,7 +3,6 @@ import { Route, Link } from "react-router-dom";
 import Header from './Header';
 import Right from './Right';
 import WriteContainer from './WriteContainer';
-import './Write.css';
 
 class Write extends Component {
     constructor(props) {

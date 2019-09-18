@@ -1,0 +1,105 @@
+.commentContainer {
+  margin-top: 120px;
+  border-top: 1px solid #bcbcbc;
+  padding-top: 80px;
+}
+
+.commentContainer .commentTitle{
+  font-weight: 300;
+}
+
+.commentContainer .content{
+  width: 80%;
+  height: 80px;
+  padding: 6px;
+  line-height:1.2em;
+  background-color: #FCFCFC;
+}
+
+.commentContainer .commentInfo{
+  width: 82%;
+  height: 120px;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+
+.commentContainer .nickName{
+  margin-top: 16px;
+  width: 90%;
+  padding: 6px;
+}
+
+.commentContainer .pw{
+  margin-top: 16px;
+  width: 90%;
+  padding: 6px;
+}
+
+.commentContainer .save{
+  float: right;
+  margin-right: 20%;
+}
+
+.commentList{
+  margin-top: 120px;
+}
+
+.commentList .comment{
+  padding: 12px;
+  width: 90%;
+  min-height: 120px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.commentList .nickName{
+  margin-right: 3%;
+  font-weight: 300;
+}
+
+.commentList .date{
+  font-size: 0.8em;
+}
+
+.commentList .commentContent{
+  margin-top: 30px;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.commentList .button {
+  float: right;
+}
+
+.commentList .modifyTextarea{
+  display: none;
+  margin-top: 12px;
+  margin-left: 36%;
+  margin-bottom: 60px;
+}
+
+.commentList .modifyTextarea textarea{
+  width:90%;
+  height: 80px;
+}
+
+
+.commentList .modifyButton{
+  float: right;
+  margin-right: 12%;
+  background-color: #76FB3E;
+  border-radius: 3px;
+}
+
+.commentList .deleteTextarea{
+  display: none;
+  margin-top: 12px;
+  margin-left: 36%;
+  margin-bottom: 60px;
+}
+
+.commentList .deleteButton{
+  float: right;
+  margin-right: 12%;
+  background-color: #76FB3E;
+  border-radius: 3px;
+}

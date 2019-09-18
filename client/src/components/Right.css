@@ -7,7 +7,7 @@
 }
 
 .category{
-  height: 600px;
+  height: 300px;
   border-bottom: 1px #bcbcbc solid;
   margin-bottom: 30px;
 }
@@ -63,6 +63,54 @@
   padding : 12px;
   font-size: 1.2em;
   margin-top: 16px;
+}
+
+.mostViewedPost {
+  height : 800px;
+  border-bottom: 1px #bcbcbc solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mostViewedPost .title{
+  font-weight: 500;
+  font-size: 2em;
+  text-shadow: 0px 0px 24px #585858;
+}
+
+.mostViewedPost ul{
+  margin-top: 30px;
+  list-style: none;
+  margin-left: -24px;
+}
+
+.mostViewedPost ul li{
+  margin-top: 16px;
+}
+
+.mostViewedPost ul li .postTitle{
+  color: #8A0829;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.mostViewedPost ul li .postTitle:hover{
+  color: #0CDD00;
+  text-decoration: none;
+}
+
+.mostViewedPost ul li .date{
+  color: #0CDD00;
+  font-size: 0.8em;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.mostViewedPost ul li .hit{
+  font-weight: 300;
+  margin-top: 8px;
+  margin-left: 6px;
 }
 
 .recentPost{
@@ -138,6 +186,7 @@
 .goManagerPage{
   float: right;
   text-decoration: none;
+  margin-bottom: 60px;
 }
 
 .goManagerPage:hover{
